@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap');
+
+/* Preeti Font Definition */
+@font-face {
+  font-family: 'Preeti';
+  src: url('https://cdn.jsdelivr.net/gh/quicoto/Preeti-Font@master/Preeti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0e0e10;
+  --bg-surface: #18181c;
+  --bg-raised: #212126;
+  --bg-hover: #2a2a30;
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.14);
+  --accent: #4ade80;
+  --accent-dim: rgba(74,222,128,0.12);
+  --accent-glow: rgba(74,222,128,0.25);
+  --text-primary: #f0f0f2;
+  --text-secondary: #9898a8;
+  --text-muted: #5c5c70;
+  --danger: #f87171;
+  --warning: #fbbf24;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-nepali: 'Noto Sans Devanagari', sans-serif;
+  --font-preeti: 'Preeti', serif;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+  --transition: 0.18s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+::selection { background: var(--accent-glow); color: var(--text-primary); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+textarea, input, button { font-family: inherit; }
+button { cursor: pointer; }
